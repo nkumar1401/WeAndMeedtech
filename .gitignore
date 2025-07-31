@@ -1,14 +1,48 @@
+# VSCode settings
 .vscode/
-.env
-env/
+
+# Python cache
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
+
+# Virtual environments
 venv/
-env
+env/
+myenv/           # if you named it differently
+
+# Environment variables
+.env
+.env.*
+
+# Django DB files (for local dev only)
 *.sqlite3
-*.log
 *.db
-*.DS_Store
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Python egg metadata
 *.egg-info/
-/media/
+dist/
+build/
+
+# Media files (user uploads - usually served from cloud or ignored in prod)
+media/
+mediafiles/
+
+# Static files (can be collected with collectstatic)
+staticfiles/
+static/
+
+# IDEs/Editors
+.idea/
+*.swp
+
+# Migrations (optional - include only if you want to recreate)
+# **/migrations/
+# !**/migrations/__init__.py
